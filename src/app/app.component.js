@@ -9,36 +9,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var TasksComponent = (function () {
-    function TasksComponent() {
-        this.sample = 978289;
-        this.toggle = true;
-    }
-    TasksComponent.prototype.ngOnInit = function () { };
-    TasksComponent = __decorate([
-        core_1.Component({
-            selector: 'tasks',
-            template: "<h2 [class.green]=\"toggle\" >this is an tasks</h2>\n            \n            <span>{{ sample }}</span>\n            ",
-            styles: [".green{ color: green;}"]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], TasksComponent);
-    return TasksComponent;
-}());
-exports.TasksComponent = TasksComponent;
+/*---------------------------main component---------------------*/
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular2';
+        this.sample = "Hello";
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1> \n             \n             <tasks> </tasks>\n          ",
-            styles: ['h1{color: red;}']
+            template: " <headercomp> </headercomp>\n              <h1>Hello {{name}}</h1> \n              <input [(ngModel)]=\"sample\" #ctrl=\"ngModel\" required>\n              <span> {{sample}} </span> \n              <tasks> </tasks>\n          ",
+            styles: []
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
 exports.AppComponent = AppComponent;
+/* ---------------------TaskServices----------------- */
+var TaskServices = (function () {
+    function TaskServices() {
+        this.tasks = ["First", "Second", "Third", "Fourth"];
+    }
+    TaskServices = __decorate([
+        core_1.Injectable(), 
+        __metadata('design:paramtypes', [])
+    ], TaskServices);
+    return TaskServices;
+}());
+exports.TaskServices = TaskServices;
+var TasksComponent = (function () {
+    function TasksComponent(TaskServices) {
+        this.TaskServices = TaskServices;
+    }
+    TasksComponent.prototype.ngOnInit = function () { };
+    TasksComponent = __decorate([
+        core_1.Component({
+            selector: 'tasks',
+            providers: [TaskServices],
+            template: "<h2 [class.green]=\"toggle\" >this is an tasks</h2>\n            {{TaskServices.tasks | json}}      \n            <ul>\n                <li *ngFor = \" let tasks of TaskServices.tasks \">\n                {{tasks}}\n                </li>\n            </ul>\n            ",
+            styles: [".green{ color: green;}  "]
+        }), 
+        __metadata('design:paramtypes', [TaskServices])
+    ], TasksComponent);
+    return TasksComponent;
+}());
+exports.TasksComponent = TasksComponent;
 //# sourceMappingURL=app.component.js.map
