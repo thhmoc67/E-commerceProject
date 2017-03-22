@@ -8,43 +8,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+var router_1 = require('@angular/router');
 var core_1 = require('@angular/core');
-var platform_browser_1 = require('@angular/platform-browser');
-var forms_1 = require('@angular/forms');
-var nav_route_module_1 = require('./nav-route.module');
-var app_component_1 = require('./app.component');
-var header_component_1 = require('./header.component');
 var home_component_1 = require('./home.component');
 var Error404_component_1 = require('./Error404.component');
 var freeTemplate_component_1 = require('./freeTemplate.component');
 var premiumTemplate_component_1 = require('./premiumTemplate.component');
-var AppModule = (function () {
-    function AppModule() {
+var appRoutes = [
+    { path: 'home', component: home_component_1.HomeComponent },
+    { path: 'free-template', component: freeTemplate_component_1.freeTemplateComponent },
+    { path: 'premium-template', component: premiumTemplate_component_1.premiumTemplateComponent },
+    { path: '**', component: Error404_component_1.pageNotFoundComponent },
+    { path: '', redirectTo: "./home", pathMatch: "full" }
+];
+exports.appRouting = router_1.RouterModule.forRoot(appRoutes);
+var AppRoutingModule = (function () {
+    function AppRoutingModule() {
     }
-    AppModule = __decorate([
+    AppRoutingModule = __decorate([
         core_1.NgModule({
             imports: [
-                platform_browser_1.BrowserModule,
-                forms_1.FormsModule,
-                nav_route_module_1.AppRoutingModule
+                router_1.RouterModule.forRoot(appRoutes)
             ],
-            declarations: [
-                app_component_1.AppComponent,
-                app_component_1.TasksComponent,
-                header_component_1.HeadercompComponent,
-                home_component_1.HomeComponent,
-                freeTemplate_component_1.freeTemplateComponent,
-                premiumTemplate_component_1.premiumTemplateComponent,
-                Error404_component_1.pageNotFoundComponent
-            ],
-            bootstrap: [
-                app_component_1.AppComponent,
-                app_component_1.TasksComponent,
-            ],
+            exports: [
+                router_1.RouterModule
+            ]
         }), 
         __metadata('design:paramtypes', [])
-    ], AppModule);
-    return AppModule;
+    ], AppRoutingModule);
+    return AppRoutingModule;
 }());
-exports.AppModule = AppModule;
-//# sourceMappingURL=app.module.js.map
+exports.AppRoutingModule = AppRoutingModule;
+//# sourceMappingURL=nav-route.module.js.map

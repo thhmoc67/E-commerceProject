@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
                 </div>
                 <div id="navig-bar">
             		<ul type="none" class="navbar">
-                        li
-                        <a routerLink= "/Home" routerLinkActive="active" > Home </a>
-            			<a routerLink= "/free-template" routerLinkActive="active" > Free Template </a>
-                        <a routerLink= "/premium-template" routerLinkActive="active" > Premium Template </a>
+                        
+                        <li><a routerLink= "/home" routerLinkActive="active" > Home </a></li>
+            			<li><a routerLink= "/free-template" routerLinkActive="active" > Free Template </a></li>
+                        <li><a routerLink= "/premium-template" routerLinkActive="active" > Premium Template </a></li>
             		</ul>
             		<ul type="none" class="navbar" style="float: right; margin-right: 30px;">
             			<li><a href="#">Login</a></li>			

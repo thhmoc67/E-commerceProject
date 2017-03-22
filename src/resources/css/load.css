@@ -1,0 +1,36 @@
+#svg{
+  padding: 1em;
+  
+  color: #777;
+  text-align: center;
+  font-family: "Gill sans", sans-serif;
+  width: 100%;
+  margin: 20% auto;
+}
+#svg>h1{
+  margin: 1em 0;
+  border-bottom: 1px dashed;
+  padding-bottom: 1em;
+  font-weight: lighter;
+}
+#svg>p{
+  font-style: italic;
+}
+#svg>.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #ff4200
+}

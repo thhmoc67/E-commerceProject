@@ -22,4 +22,4 @@ var pageNotFoundComponent = (function () {
     return pageNotFoundComponent;
 }());
 exports.pageNotFoundComponent = pageNotFoundComponent;
-//# sourceMappingURL=404.component.js.map
+//# sourceMappingURL=Error404.component.js.map

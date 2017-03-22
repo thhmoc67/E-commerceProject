@@ -16,7 +16,7 @@ var premiumTemplateComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'premiumTempalate',
-            templateUrl: "\n                <h1>premium Tempalate</h1>\n    "
+            template: "\n                <h1>premium Tempalate</h1>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], premiumTemplateComponent);

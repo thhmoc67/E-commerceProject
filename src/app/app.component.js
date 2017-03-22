@@ -18,7 +18,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: " <headercomp> </headercomp>\n              <h1>Hello {{name}}</h1> \n              <input [(ngModel)]=\"sample\" #ctrl=\"ngModel\" required>\n              <span> {{sample}} </span> \n              <tasks> </tasks>\n              \n          ",
+            template: " <headercomp> </headercomp>\n              <h1>Hello {{name}}</h1> \n              <input [(ngModel)]=\"sample\" #ctrl=\"ngModel\" required>\n              <span> {{sample}} </span> \n              <tasks> </tasks>\n              \n          "
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

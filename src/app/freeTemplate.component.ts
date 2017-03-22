@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'freeTemplate',
-    templateUrl: `
+    template: `
                 <h1> freeTemplate</h1>
     `
 })

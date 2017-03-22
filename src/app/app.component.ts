@@ -9,13 +9,13 @@ import { Component, OnInit, Injectable } from '@angular/core';
               <span> {{sample}} </span> 
               <tasks> </tasks>
               
-          `,
+          `
   
 })
 
 export class AppComponent  {
   name = 'Angular2';
-   sample: string="Hello"; 
+  sample: string="Hello"; 
   mynumber: number ;
 }
 

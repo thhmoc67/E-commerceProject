@@ -1,30 +1,22 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA}      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { AppRoutingModule } from './nav-route.module';
 
 import { AppComponent, TasksComponent}  from './app.component';
 import { HeadercompComponent } from './header.component';
 import { HomeComponent  } from './home.component';
-import { pageNotFoundComponent } from './404.component';
+import { pageNotFoundComponent } from './Error404.component';
 import { freeTemplateComponent } from './freeTemplate.component';
 import { premiumTemplateComponent } from './premiumTemplate.component';
 
-const appRoutes: Routes = [
-  { path: '/home', component: HomeComponent },
-  { path: '/free-template', component: freeTemplateComponent },
-  { path: '/premium-template', component: premiumTemplateComponent },
 
-  { path: '**', component: pageNotFoundComponent },
-  { path: '', redirectTo:"/home", pathMatch:"full" }
-];
-
-export const appRouting = RouterModule.forRoot(appRoutes);
 
 @NgModule({
   imports:      [ 
                   BrowserModule, 
-                  FormsModule 
+                  FormsModule,
+                  AppRoutingModule
                 ],
   declarations: [ 
                   AppComponent,
