@@ -9,7 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-/*---------------------------main component---------------------*/
+/*--------------------------Initial component---------------------*/
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular2';
@@ -18,8 +18,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: " <headercomp> </headercomp>\n              <h1>Hello {{name}}</h1> \n              <input [(ngModel)]=\"sample\" #ctrl=\"ngModel\" required>\n              <span> {{sample}} </span> \n              <tasks> </tasks>\n          ",
-            styles: []
+            template: " <headercomp> </headercomp>\n              <h1>Hello {{name}}</h1> \n              <input [(ngModel)]=\"sample\" #ctrl=\"ngModel\" required>\n              <span> {{sample}} </span> \n              <tasks> </tasks>\n              \n          ",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
@@ -55,4 +54,5 @@ var TasksComponent = (function () {
     return TasksComponent;
 }());
 exports.TasksComponent = TasksComponent;
+/*----------------------*/
 //# sourceMappingURL=app.component.js.map

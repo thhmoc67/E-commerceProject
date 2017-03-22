@@ -1,7 +1,6 @@
 
 import { Component, OnInit, Injectable } from '@angular/core';
-
-/*---------------------------main component---------------------*/
+/*--------------------------Initial component---------------------*/
 @Component({
   selector: 'my-app',
   template: ` <headercomp> </headercomp>
@@ -9,8 +8,9 @@ import { Component, OnInit, Injectable } from '@angular/core';
               <input [(ngModel)]="sample" #ctrl="ngModel" required>
               <span> {{sample}} </span> 
               <tasks> </tasks>
+              
           `,
-  styles: []
+  
 })
 
 export class AppComponent  {
@@ -44,4 +44,6 @@ export class TasksComponent implements OnInit{
  
   ngOnInit(){ }
 }
+/*----------------------*/
+
 

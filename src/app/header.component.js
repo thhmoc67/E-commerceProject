@@ -17,7 +17,7 @@ var HeadercompComponent = (function () {
     HeadercompComponent = __decorate([
         core_1.Component({
             selector: 'headercomp',
-            template: " <div id=header>\n                <h1>Tamplate-o-mania </h1> \n                </div>\n                <div id=\"navig-bar\">\n            \t\t<ul type=\"none\" class=\"navbar\">\n            \t\t\t<li><a href=\"#\">Home</a></li>\n            \t\t\t<li><a href=\"#\">Free Tamplate</a></li>\n            \t\t\t<li><a href=\"#\">Premium Template</a></li>\n            \t\t\t\n            \t\t</ul>\n            \t\t<ul type=\"none\" class=\"navbar\" style=\"float: right; margin-right: 30px;\">\n            \t\t\t<li><a href=\"#\">Login</a></li>\t\t\t\n            \t\t</ul>\n            \n            \t</div>\n              "
+            template: " <div id=header>\n                <h1>Tamplate-o-mania </h1> \n                </div>\n                <div id=\"navig-bar\">\n            \t\t<ul type=\"none\" class=\"navbar\">\n                        li\n                        <a routerLink= \"/Home\" routerLinkActive=\"active\" > Home </a>\n            \t\t\t<a routerLink= \"/free-template\" routerLinkActive=\"active\" > Free Template </a>\n                        <a routerLink= \"/premium-template\" routerLinkActive=\"active\" > Premium Template </a>\n            \t\t</ul>\n            \t\t<ul type=\"none\" class=\"navbar\" style=\"float: right; margin-right: 30px;\">\n            \t\t\t<li><a href=\"#\">Login</a></li>\t\t\t\n            \t\t</ul>\n                    li  div\n           \n            \t</div>\n                    div \n                <router-outlet></router-outlet>\n              "
         }), 
         __metadata('design:paramtypes', [])
     ], HeadercompComponent);
