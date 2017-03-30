@@ -1,3 +1,4 @@
+body {background: #f9f9f9 url(/resources/img/page-bg-1.jpg);}
 h1 {
   color: #369;
   font-family: Arial, Helvetica, sans-serif;
@@ -6,12 +7,13 @@ h1 {
 #header{
 	padding: 10px 10px 10px 10px;
 	text-align:  center;
-	background-color: grey;
+	background-color: rgba(128, 128, 128, 0.82);
 	color: white;
 }
-.navbar{
+.nav-barmain{
 			display: -webkit-inline-box;
-			
+			padding: 17px 10px 17px 10px;
+			margin: 0px 0px 0px 0px ;			
 }
 #navig-bar
 {
@@ -19,12 +21,24 @@ h1 {
 }
 
 
-.navbar>li>a{
+.nav-barmain>li>a{
 	margin: 5px 5px 5px 5px;
 	padding:  5px 5px 5px 5px;
 	background: grey;
 	color: white;
 }
-.navbar>li>a:hover{
+.nav-barmain>li>a:hover{
 	background: red;
+}
+
+
+
+.tempImg{
+    width: 200px;
+    padding:10px 10px 10px 10px;
+}
+
+.bottom{
+	color: red;
+	background-color: blue;
 }

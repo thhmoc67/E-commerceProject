@@ -18,6 +18,7 @@ var home_component_1 = require('./home.component');
 var Error404_component_1 = require('./Error404.component');
 var freeTemplate_component_1 = require('./freeTemplate.component');
 var premiumTemplate_component_1 = require('./premiumTemplate.component');
+var home_module_1 = require('./home/home.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -26,6 +27,7 @@ var AppModule = (function () {
             imports: [
                 platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
+                home_module_1.HomeModule,
                 nav_route_module_1.AppRoutingModule
             ],
             declarations: [
@@ -35,11 +37,11 @@ var AppModule = (function () {
                 home_component_1.HomeComponent,
                 freeTemplate_component_1.freeTemplateComponent,
                 premiumTemplate_component_1.premiumTemplateComponent,
-                Error404_component_1.pageNotFoundComponent
+                Error404_component_1.pageNotFoundComponent,
             ],
             bootstrap: [
                 app_component_1.AppComponent,
-                app_component_1.TasksComponent,
+                app_component_1.TasksComponent
             ],
         }), 
         __metadata('design:paramtypes', [])

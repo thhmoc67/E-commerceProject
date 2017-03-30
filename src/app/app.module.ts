@@ -11,11 +11,15 @@ import { freeTemplateComponent } from './freeTemplate.component';
 import { premiumTemplateComponent } from './premiumTemplate.component';
 
 
+import { HomeModule } from './home/home.module';
+
+
 
 @NgModule({
   imports:      [ 
                   BrowserModule, 
                   FormsModule,
+                  HomeModule,
                   AppRoutingModule
                 ],
   declarations: [ 
@@ -25,12 +29,13 @@ import { premiumTemplateComponent } from './premiumTemplate.component';
                   HomeComponent,
                   freeTemplateComponent,
                   premiumTemplateComponent,
-                  pageNotFoundComponent
+                  pageNotFoundComponent,
+                
                 ],
   bootstrap:    [ 
                   AppComponent,
-                  TasksComponent,
-
+                  TasksComponent
+                  
                 ],
 
 })

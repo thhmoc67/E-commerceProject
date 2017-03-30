@@ -1,15 +1,14 @@
 
 import { Component, OnInit, Injectable } from '@angular/core';
+
 /*--------------------------Initial component---------------------*/
 @Component({
   selector: 'my-app',
-  template: ` <headercomp> </headercomp>
-              <h1>Hello {{name}}</h1> 
-              <input [(ngModel)]="sample" #ctrl="ngModel" required>
-              <span> {{sample}} </span> 
-              <tasks> </tasks>
-              
-          `
+  templateUrl: 'app/html/app-component.html',
+  styleUrls:['resources/css/styles.css',
+                'resources/bootstrap/css/bootstrap.css'
+                ]
+      
   
 })
 
@@ -45,5 +44,4 @@ export class TasksComponent implements OnInit{
   ngOnInit(){ }
 }
 /*----------------------*/
-
 

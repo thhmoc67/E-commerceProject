@@ -17,7 +17,7 @@ var HeadercompComponent = (function () {
     HeadercompComponent = __decorate([
         core_1.Component({
             selector: 'headercomp',
-            template: " <div id=header>\n                <h1>Tamplate-o-mania </h1> \n                </div>\n                <div id=\"navig-bar\">\n            \t\t<ul type=\"none\" class=\"navbar\">\n                        \n                        <li><a routerLink= \"/home\" routerLinkActive=\"active\" > Home </a></li>\n            \t\t\t<li><a routerLink= \"/free-template\" routerLinkActive=\"active\" > Free Template </a></li>\n                        <li><a routerLink= \"/premium-template\" routerLinkActive=\"active\" > Premium Template </a></li>\n            \t\t</ul>\n            \t\t<ul type=\"none\" class=\"navbar\" style=\"float: right; margin-right: 30px;\">\n            \t\t\t<li><a href=\"#\">Login</a></li>\t\t\t\n            \t\t</ul>\n                    li  div\n           \n            \t</div>\n                    div \n                <router-outlet></router-outlet>\n              "
+            templateUrl: '/app/html/HeaderComponent.html'
         }), 
         __metadata('design:paramtypes', [])
     ], HeadercompComponent);

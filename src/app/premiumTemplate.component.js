@@ -16,7 +16,13 @@ var premiumTemplateComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'premiumTempalate',
-            template: "\n                <h1>premium Tempalate</h1>\n    "
+            templateUrl: '/app/html/PremiumTemplateComponent.html',
+            styleUrls: ['/resources/css/style-ie.css',
+                '/resources/bootstrap/css/bootstrap.css',
+                '/resources/css/style-ie.css',
+                '/resources/css/custom-styles.css',
+                '/resources/css/bootstrap.css'
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], premiumTemplateComponent);

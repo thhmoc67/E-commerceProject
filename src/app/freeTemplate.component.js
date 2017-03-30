@@ -16,7 +16,11 @@ var freeTemplateComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'freeTemplate',
-            template: "\n                <h1> freeTemplate</h1>\n    "
+            templateUrl: '/app/html/freetemplate.html',
+            styleUrls: [
+                '/resources/bootstrap/css/bootstrap.css',
+                '/resources/bootstrap/css/bootstrap.min.css',
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], freeTemplateComponent);
