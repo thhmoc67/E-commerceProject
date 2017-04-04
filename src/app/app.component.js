@@ -49,7 +49,7 @@ var TasksComponent = (function () {
         core_1.Component({
             selector: 'tasks',
             providers: [TaskServices],
-            template: "<h2 [class.green]=\"toggle\" >this is an tasks</h2>\n            {{TaskServices.tasks | json}}      \n            <ul>\n                <li *ngFor = \" let tasks of TaskServices.tasks \">\n                {{tasks}}\n                </li>\n            </ul>\n            ",
+            template: "<!-- <h2 [class.green]=\"toggle\" >this is an tasks</h2>\n            {{TaskServices.tasks | json}}      \n            <ul>\n                <li *ngFor = \" let tasks of TaskServices.tasks \">\n                {{tasks}}\n                </li>\n            </ul> -->\n            ",
             styles: [".green{ color: green;}  "]
         }), 
         __metadata('design:paramtypes', [TaskServices])

@@ -27,13 +27,13 @@ export class TaskServices{
 @Component({
   selector:'tasks',
   providers:[ TaskServices],
-  template:`<h2 [class.green]="toggle" >this is an tasks</h2>
+  template:`<!-- <h2 [class.green]="toggle" >this is an tasks</h2>
             {{TaskServices.tasks | json}}      
             <ul>
                 <li *ngFor = " let tasks of TaskServices.tasks ">
                 {{tasks}}
                 </li>
-            </ul>
+            </ul> -->
             `,
   styles: [".green{ color: green;}  "]
 })

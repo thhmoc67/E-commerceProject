@@ -16,7 +16,7 @@ var HomeComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'home',
-            template: " \n                <h1>hi, you are now at home</h1>\n    "
+            templateUrl: '/app/html/HomeComponent.html',
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
