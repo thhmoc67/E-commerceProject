@@ -34,8 +34,10 @@ h1 {
 
 
 .tempImg{
-    width: 200px;
-    padding:10px 10px 10px 10px;
+    width: 300px;	
+    padding:5px 5px 5px 5px;
+	margin: 7px 7px 7px 7px;
+	box-shadow: 3px 3px 2px #888888;
 }
 
 .bottom{

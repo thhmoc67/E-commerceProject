@@ -8,20 +8,21 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var HeadercompComponent = (function () {
     function HeadercompComponent() {
     }
     HeadercompComponent.prototype.ngOnInit = function () {
     };
-    HeadercompComponent = __decorate([
-        core_1.Component({
-            selector: 'headercomp',
-            templateUrl: '/app/html/HeaderComponent.html'
-        }), 
-        __metadata('design:paramtypes', [])
-    ], HeadercompComponent);
     return HeadercompComponent;
 }());
+HeadercompComponent = __decorate([
+    core_1.Component({
+        selector: 'headercomp',
+        templateUrl: '/app/html/HeaderComponent.html'
+    }),
+    __metadata("design:paramtypes", [])
+], HeadercompComponent);
 exports.HeadercompComponent = HeadercompComponent;
 //# sourceMappingURL=header.component.js.map

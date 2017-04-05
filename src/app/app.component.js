@@ -8,54 +8,53 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 /*--------------------------Initial component---------------------*/
 var AppComponent = (function () {
     function AppComponent() {
         this.name = 'Angular2';
         this.sample = "Hello";
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            templateUrl: 'app/html/app-component.html',
-            styleUrls: ['resources/css/styles.css',
-                'resources/bootstrap/css/bootstrap.css'
-            ]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        templateUrl: 'app/html/app-component.html',
+        styleUrls: ['resources/css/styles.css',
+            'resources/bootstrap/css/bootstrap.css'
+        ]
+    })
+], AppComponent);
 exports.AppComponent = AppComponent;
 /* ---------------------TaskServices----------------- */
 var TaskServices = (function () {
     function TaskServices() {
         this.tasks = ["First", "Second", "Third", "Fourth"];
     }
-    TaskServices = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [])
-    ], TaskServices);
     return TaskServices;
 }());
+TaskServices = __decorate([
+    core_1.Injectable()
+], TaskServices);
 exports.TaskServices = TaskServices;
 var TasksComponent = (function () {
     function TasksComponent(TaskServices) {
         this.TaskServices = TaskServices;
     }
     TasksComponent.prototype.ngOnInit = function () { };
-    TasksComponent = __decorate([
-        core_1.Component({
-            selector: 'tasks',
-            providers: [TaskServices],
-            template: "<!-- <h2 [class.green]=\"toggle\" >this is an tasks</h2>\n            {{TaskServices.tasks | json}}      \n            <ul>\n                <li *ngFor = \" let tasks of TaskServices.tasks \">\n                {{tasks}}\n                </li>\n            </ul> -->\n            ",
-            styles: [".green{ color: green;}  "]
-        }), 
-        __metadata('design:paramtypes', [TaskServices])
-    ], TasksComponent);
     return TasksComponent;
 }());
+TasksComponent = __decorate([
+    core_1.Component({
+        selector: 'tasks',
+        providers: [TaskServices],
+        template: "<!-- <h2 [class.green]=\"toggle\" >this is an tasks</h2>\n            {{TaskServices.tasks | json}}      \n            <ul>\n                <li *ngFor = \" let tasks of TaskServices.tasks \">\n                {{tasks}}\n                </li>\n            </ul> -->\n            ",
+        styles: [".green{ color: green;}  "]
+    }),
+    __metadata("design:paramtypes", [TaskServices])
+], TasksComponent);
 exports.TasksComponent = TasksComponent;
 /*----------------------*/
 //# sourceMappingURL=app.component.js.map
