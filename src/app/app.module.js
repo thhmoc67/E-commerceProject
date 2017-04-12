@@ -18,6 +18,8 @@ var home_component_1 = require('./home.component');
 var Error404_component_1 = require('./Error404.component');
 var freeTemplate_component_1 = require('./freeTemplate.component');
 var premiumTemplate_component_1 = require('./premiumTemplate.component');
+var footer_component_1 = require('./footer.component');
+var loaders_component_1 = require("./loaders.component");
 var home_module_1 = require('./home/home.module');
 var AppModule = (function () {
     function AppModule() {
@@ -30,7 +32,7 @@ var AppModule = (function () {
                 home_module_1.HomeModule,
                 nav_route_module_1.AppRoutingModule
             ],
-            declarations: [
+            declarations: [loaders_component_1.LoadersComponent,
                 app_component_1.AppComponent,
                 app_component_1.TasksComponent,
                 header_component_1.HeadercompComponent,
@@ -38,6 +40,7 @@ var AppModule = (function () {
                 freeTemplate_component_1.freeTemplateComponent,
                 premiumTemplate_component_1.premiumTemplateComponent,
                 Error404_component_1.pageNotFoundComponent,
+                footer_component_1.FooterComponent,
             ],
             bootstrap: [
                 app_component_1.AppComponent,

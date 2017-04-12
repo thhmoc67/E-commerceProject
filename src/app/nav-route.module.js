@@ -10,13 +10,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var router_1 = require('@angular/router');
 var core_1 = require('@angular/core');
-var Error404_component_1 = require('./Error404.component');
 var freeTemplate_component_1 = require('./freeTemplate.component');
 var premiumTemplate_component_1 = require('./premiumTemplate.component');
+var home_component_1 = require('./home.component');
 var appRoutes = [
     { path: 'free-template', component: freeTemplate_component_1.freeTemplateComponent },
     { path: 'premium-template', component: premiumTemplate_component_1.premiumTemplateComponent },
-    { path: '**', component: Error404_component_1.pageNotFoundComponent },
+    { path: '**', component: home_component_1.HomeComponent },
     { path: '', redirectTo: "./home", pathMatch: "full" }
 ];
 exports.appRouting = router_1.RouterModule.forRoot(appRoutes);

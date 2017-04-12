@@ -9,6 +9,8 @@ import { HomeComponent  } from './home.component';
 import { pageNotFoundComponent } from './Error404.component';
 import { freeTemplateComponent } from './freeTemplate.component';
 import { premiumTemplateComponent } from './premiumTemplate.component';
+import { FooterComponent } from './footer.component';
+import { LoadersComponent } from "./loaders.component";
 
 
 import { HomeModule } from './home/home.module';
@@ -22,14 +24,17 @@ import { HomeModule } from './home/home.module';
                   HomeModule,
                   AppRoutingModule
                 ],
-  declarations: [ 
+  declarations: [ LoadersComponent,
                   AppComponent,
+                  
                   TasksComponent,
                   HeadercompComponent,
                   HomeComponent,
                   freeTemplateComponent,
                   premiumTemplateComponent,
                   pageNotFoundComponent,
+                  FooterComponent,
+                  
                 
                 ],
   bootstrap:    [ 

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { pageNotFoundComponent } from './Error404.component';
 import { freeTemplateComponent } from './freeTemplate.component';
 import { premiumTemplateComponent } from './premiumTemplate.component';
+import { HomeComponent } from './home.component';
 
 
 
@@ -12,7 +13,7 @@ const appRoutes: Routes = [
   { path: 'free-template', component: freeTemplateComponent },
   { path: 'premium-template', component: premiumTemplateComponent },
 
-  { path: '**', component: pageNotFoundComponent },
+  { path: '**', component:  HomeComponent},
   { path: '', redirectTo:"./home", pathMatch:"full" }  
 ]; 
 
